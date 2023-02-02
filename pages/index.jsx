@@ -13,7 +13,6 @@ export default function index() {
                 display: "flex",
                 flexDirection: "column",
                 flex: 1
-                // backgroundColor: "red",
             }}>
                 <Menu />
                 <Header />

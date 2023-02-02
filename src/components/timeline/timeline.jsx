@@ -7,8 +7,6 @@ export default function Timeline(props) {
     <StyledTimeline>
       {playlistNames.map((playlistName) => {
         const videos = props.playlists[playlistName];
-        console.log(playlistName);
-        console.log(videos);
         return (
           <section>
             <h2>{playlistName}</h2>
