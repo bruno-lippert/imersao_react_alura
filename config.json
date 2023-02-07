@@ -2,6 +2,7 @@
     "name": "Bruno Lippert",
     "job": "Front end developer",
     "github": "bruno-lippert",
+    "banner": "https://www.balmerlawrie.com/img/main_images/inside_banner/travel-banner1.jpg",
     "playlists": {
         "jogos": [
             {
@@ -128,6 +129,20 @@
             "title": "O que é o C#? #HipstersPontoTube",
             "url": "https://www.youtube.com/watch?v=0JWMVc1CqpA",
             "thumb": "https://img.youtube.com/vi/0JWMVc1CqpA/hqdefault.jpg"
+          }
+        ]
+      },
+      "favorites": {
+        "youtubers": [
+          {
+            "name": "Gamepalyrj",
+            "img": "https://yt3.googleusercontent.com/3h505yEqcDVWmZQAFZoHTHl8OooETXsgRdE0MN_3HpD0DZa9MYfqo-akwfJ7Ysio7t7wLVLfEw=s88-c-k-c0x00ffffff-no-rj",
+            "url": "https://www.youtube.com/gameplayrj"
+          },
+          {
+            "name": "MW Informática",
+            "img": "https://yt3.googleusercontent.com/h5IqYBOpAGEO1sHI25baAdcBgJK9HGN-wUuZGXWMwEQVh6yvzIE-U_qkGeGaD7Q8KTWHK5fr7Q=s88-c-k-c0x00ffffff-no-rj",
+            "url": "https://www.youtube.com/@MWInformatica"
           }
         ]
       }

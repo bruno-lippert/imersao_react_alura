@@ -14,8 +14,8 @@ export default function index() {
                 flexDirection: "column",
                 flex: 1
             }}>
-                <Menu />
-                <Header />
+                <Menu/>
+                <Header banner={config.banner}/>
                 <Timeline playlists={config.playlists}>
                     Conteúdo
                 </Timeline>

@@ -1,9 +1,13 @@
 // import React from 'react'
+// import { Logo, StyledMenu } from '../Menu';
 
 // export default function Menu() {
-//   return (
-//     <>
-//       <div>Menu</div>
-//     </>
-//   )
-// }
+//     return (
+//       <StyledMenu>
+//         <div>
+//           <Logo />
+//         </div>
+//       </StyledMenu>
+//     );
+//   }
+  
