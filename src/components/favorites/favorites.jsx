@@ -12,7 +12,7 @@ export default function Favorites(props) {
                 <div className="favorites">
                     {youtubers.map((favorites) => {
                         return (
-                            <a href={favorites.url} target="_blank">
+                            <a key={favorites.url} href={favorites.url} target="_blank">
                                 <img src={favorites.img} className="imgFavorite"/>
                                 <p className="nameFavorite">{favorites.name}</p>
                             </a>

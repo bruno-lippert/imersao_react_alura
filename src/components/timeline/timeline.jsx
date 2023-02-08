@@ -11,12 +11,14 @@ export default function Timeline(props) {
         {playlistNames.map((playlistName) => {
           const videos = props.playlists[playlistName];
           return (
-            <section>
+            <section key={playlistName}>
               <h2>{playlistName}</h2>
               <div>
-                {videos.map((video) => {
+                {videos.filter((video) =>{
+                  return video.title.toLowerCase().includes(props.searchValue.toLowerCase())
+                }).map((video) => {
                   return (
-                    <a href={video.url}>
+                    <a key={video.url} href={video.url}>
                       <img src={video.thumb} />
                       <span>{video.title}</span>
                     </a>
