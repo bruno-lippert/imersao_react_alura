@@ -15,6 +15,7 @@ export default function index() {
                 display: "flex",
                 flexDirection: "column",
                 flex: 1
+                
             }}>
                 <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro}/>
                 <Header banner={config.banner}/>
