@@ -11,7 +11,7 @@ label {
 
 .sliderContainer {
     border: 2px solid black;
-    padding: 3px;
+    padding: 3px 23px 3px 3px;
     border-radius: 50px;
     height: 30px;
     transition: 0.5s;
