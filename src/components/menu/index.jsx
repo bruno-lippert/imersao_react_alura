@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import ChangeTheme from "./components/changeTheme/ChangeTheme";
 import Search from "./components/search/search";
 import { StyledMenu } from "./styledIndex";
