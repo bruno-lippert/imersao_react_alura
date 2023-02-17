@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Header from '../src/components/header/header'
 import Timeline from '../src/components/timeline/timeline'
 import config from '../config.json'
-import Menu from '../src/components/Menu/index'
+import Menu from '../src/components/menu/menu'
 import { CSSReset } from '../src/components/CSSReset'
 
 export default function index() {
