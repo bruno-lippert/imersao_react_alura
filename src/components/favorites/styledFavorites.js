@@ -24,8 +24,4 @@ a {
     justify-content: center;
 }
 
-.nameFavorite {
-    color: black;
-}
-
 `;

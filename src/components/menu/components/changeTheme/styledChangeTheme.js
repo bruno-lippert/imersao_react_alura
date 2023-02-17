@@ -30,9 +30,10 @@ label {
     display: none;
 }
 .checkbox:checked ~ .sliderContainer{
-    background-color: black;
+    background-color: #363636;
     transition: 0.5s;
     padding-left: 23px;
+    border-color: white;
 }
 
 .checkbox:checked ~ .sliderContainer > .sliderButton{

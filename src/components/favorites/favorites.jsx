@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledFavorites } from "./favoritesCSS";
+import { StyledFavorites } from "./styledFavorites";
 
 export default function Favorites(props) {
     const favorites = Object.keys(props.favorites)

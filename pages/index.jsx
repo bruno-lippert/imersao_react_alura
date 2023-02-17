@@ -7,19 +7,20 @@ import { CSSReset } from '../src/components/CSSReset'
 
 export default function index() {
   const [valorDoFiltro, setValorDoFiltro] = React.useState("")
+  const [sliderButtonIsOn, setSliderButtonIsOn] = useState(false);
 
   return (
     <>
-      <CSSReset />
+      <CSSReset sliderButtonIsOn={sliderButtonIsOn} />
             <div style={{
                 display: "flex",
                 flexDirection: "column",
                 flex: 1
                 
             }}>
-                <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro}/>
+                <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} sliderButtonIsOn={sliderButtonIsOn} setSliderButtonIsOn={setSliderButtonIsOn}/>
                 <Header banner={config.banner}/>
-                <Timeline searchValue={valorDoFiltro} playlists={config.playlists}>
+                <Timeline searchValue={valorDoFiltro} playlists={config.playlists} sliderButtonIsOn={sliderButtonIsOn}>
                     Conteúdo
                 </Timeline>
             </div>

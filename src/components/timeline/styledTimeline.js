@@ -39,8 +39,22 @@ export const StyledTimeline = styled.div`
           padding-top: 8px;
           display: block;
           padding-right: 24px;
-          color: ${({ theme }) => theme.textColorBase || "#222222"};
         }
+      }
+      /* Estilos do scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px; /* largura do scrollbar */
+        height: 10px; /* altura do scrollbar */
+        background-color: ${(props) => (props.sliderButtonIsOn === false ? "#ffffff" : "#363636")};
+        border-radius: 5px;
+      }
+      /* Estilos do thumb do scrollbar */
+      ::-webkit-scrollbar-thumb {
+        background-color: ${(props) => (props.sliderButtonIsOn === false ? "#363636" : "#ffffff")};
+        border-radius: 5px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #666; /* cor do thumb quando hover */
       }
     }
   }
