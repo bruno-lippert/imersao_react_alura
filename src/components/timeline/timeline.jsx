@@ -7,7 +7,7 @@ export default function Timeline({playlists, searchValue, sliderButtonIsOn}) {
   const playlistNames = Object.keys(playlists); //retorna as chaves dos objetos(nomes dos objetos)
   return (
     <div>
-      <StyledTimeline sliderButtonIsOn={sliderButtonIsOn}>
+      <StyledTimeline>
         {playlistNames.map((playlistName) => {
           const videos = playlists[playlistName];
           return (

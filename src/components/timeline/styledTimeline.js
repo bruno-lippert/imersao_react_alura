@@ -45,16 +45,16 @@ export const StyledTimeline = styled.div`
       ::-webkit-scrollbar {
         width: 10px; /* largura do scrollbar */
         height: 10px; /* altura do scrollbar */
-        background-color: ${(props) => (props.sliderButtonIsOn === false ? "#ffffff" : "#363636")};
+        background-color: ${({theme}) => theme.colors.scrollBar};
         border-radius: 5px;
       }
       /* Estilos do thumb do scrollbar */
       ::-webkit-scrollbar-thumb {
-        background-color: ${(props) => (props.sliderButtonIsOn === false ? "#363636" : "#ffffff")};
+        background-color: ${({theme}) => theme.colors.scrollBarThumb};
         border-radius: 5px;
       }
       ::-webkit-scrollbar-thumb:hover {
-        background-color: #666; /* cor do thumb quando hover */
+        background-color: ${({theme}) => theme.colors.scrollBarThumbHover}; /* cor do thumb quando hover */
       }
     }
   }

@@ -2,14 +2,14 @@ import ChangeTheme from "./components/changeTheme/ChangeTheme";
 import Search from "./components/search/search";
 import { StyledMenu } from "./styledIndex";
 
-export default function Menu({valorDoFiltro, setValorDoFiltro, sliderButtonIsOn, setSliderButtonIsOn}, props) {
+export default function Menu({valorDoFiltro, setValorDoFiltro }) {
   return (
-    <StyledMenu sliderButtonIsOn={sliderButtonIsOn}>
+    <StyledMenu>
       <div>
         <Logo />
       </div>
       <Search valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro}/>
-      <ChangeTheme sliderButtonIsOn={sliderButtonIsOn} setSliderButtonIsOn={setSliderButtonIsOn}/>
+      <ChangeTheme/>
     </StyledMenu>
   );
 }

@@ -5,7 +5,7 @@ width: 50px;
 height: auto;
 cursor: pointer;
 
-label {
+.switch {
     cursor: pointer;
 }
 
@@ -15,15 +15,18 @@ label {
     border-radius: 50px;
     height: 30px;
     transition: 0.5s;
+    background-color: ${({theme}) => theme.colors.colorLogo};
+    border-color:  ${({theme}) => theme.colors.backgroundBase};
+
 }
 
 .sliderButton {
     width: 20px;
     height: 20px;
     border-radius: 50px;
-    border: 0px solid black;
+    border: 0px solid ${({theme}) => theme.colors.backgroundBase};
     cursor: pointer;
-    background-color: black;
+    background-color: ${({theme}) => theme.colors.backgroundLevel2};
     transition: 0.5s;
 }
 .checkbox {
@@ -32,7 +35,7 @@ label {
 .checkbox:checked ~ .sliderContainer{
     background-color: #363636;
     transition: 0.5s;
-    padding-left: 23px;
+    padding-left: 22px;
     border-color: white;
 }
 

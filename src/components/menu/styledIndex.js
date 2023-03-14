@@ -19,7 +19,7 @@ export const StyledMenu = styled.header`
       max-width: 127px;
     }
     .text {
-      fill: ${(props) => (props.sliderButtonIsOn === false ? ({ theme }) => theme.textColorBase || "#222222" : "white")};
+      fill: ${(props) => props.theme.colors.colorLogo};
     }
   }
 `;

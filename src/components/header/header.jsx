@@ -2,7 +2,7 @@ import React from 'react'
 import config from "../../../config.json"
 import { StyledBanner, StyledHeader } from './styledHeader'
 
-export default function Header(ops) {
+export default function Header() {
     return (
         <div>
             <StyledHeader>

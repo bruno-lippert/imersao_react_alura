@@ -6,8 +6,8 @@ export const CSSReset = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: ${(props) => (props.sliderButtonIsOn === false ? "white" : "#363636")};
-    color: ${(props) => (props.sliderButtonIsOn === false ? "#000000" : "#ffffff")};
+    background-color: ${(props) => (props.theme.colors.backgroundBase)};
+    color: ${(props) => (props.theme.colors.textColorBase)};
     transition: 0.5s;
   }
   body {

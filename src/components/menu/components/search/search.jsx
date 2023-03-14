@@ -1,7 +1,7 @@
 import React from "react";
 import { StyledSearch } from "./styledSearch";
 
-export default function Search({valorDoFiltro, setValorDoFiltro }) {
+export default function Search({valorDoFiltro, setValorDoFiltro, children}) {
     const valorDaBusca = valorDoFiltro;
     const setValorDaBusca = setValorDoFiltro;
     
