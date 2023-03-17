@@ -1,5 +1,5 @@
-import logoYTBlack from "./images/YouTubeAlmostBlackLogo.png";
-import logoYTWhite from "./images/YouTubeWhiteLogo.png";
+import logoYTBlack from "./public/images/YouTubeAlmostBlackLogo.png";
+import logoYTWhite from "./public/images/YouTubeWhiteLogo.png";
 
 export const lightTheme = {
   colors: {
@@ -14,7 +14,7 @@ export const lightTheme = {
     scrollBarThumbHover: "#585858",
   },
   images: {
-    logo: logoYTBlack,
+    logo: "https://www.logo.wine/a/logo/YouTube/YouTube-Almost-Black-Logo.wine.svg",
   },
 };
 
@@ -31,6 +31,6 @@ export const darkTheme = {
     scrollBarThumbHover: "#888",
   },
   images: {
-    logo: logoYTWhite
+    logo: "https://www.logo.wine/a/logo/YouTube/YouTube-White-Dark-Background-Logo.wine.svg"
   },
 };

@@ -6,10 +6,7 @@ import Menu from "../src/components/menu/menu";
 import { CSSReset } from "../src/components/CSSReset";
 import { darkTheme, lightTheme } from "../theme";
 import { ThemeProvider } from "styled-components";
-import ColorModeProvider, {
-  ColorModeContext,
-} from "../src/components/menu/components/changeTheme/ColorMode";
-
+import ColorModeProvider, { ColorModeContext } from "../src/components/menu/components/changeTheme/ColorMode";
 function ProviderWrapper(props) {
   return (
     <ColorModeProvider initialMode={darkTheme}>
@@ -32,6 +29,7 @@ function MyApp() {
           flex: 1,
         }}
       >
+        
         <Menu
           valorDoFiltro={valorDoFiltro}
           setValorDoFiltro={setValorDoFiltro}
