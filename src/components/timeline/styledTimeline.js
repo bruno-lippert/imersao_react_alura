@@ -1,4 +1,7 @@
+import { useContext } from "react";
 import styled from "styled-components";
+import { ColorModeContext } from "../menu/components/changeTheme/ColorMode";
+
 
 export const StyledTimeline = styled.div`
   flex: 1;

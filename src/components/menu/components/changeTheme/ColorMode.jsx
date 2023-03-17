@@ -14,7 +14,6 @@ export default function ColorModeProvider(props) {
   
   function toggleMode () {
     setMode(mode == darkTheme ? lightTheme : darkTheme )
-    console.log("Acerto miseravi")
   }
 
   return (

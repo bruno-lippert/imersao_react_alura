@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-const primaryDarkTheme = "#363636";
-
 export const StyledMenu = styled.header`
   display: flex;
   flex-direction: row;
@@ -19,7 +17,7 @@ export const StyledMenu = styled.header`
       max-width: 127px;
     }
     .text {
-      fill: ${(props) => props.theme.colors.colorLogo};
+      fill: ${({theme}) => theme.colors.colorLogo};
     }
   }
 `;
