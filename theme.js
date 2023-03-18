@@ -14,7 +14,7 @@ export const lightTheme = {
     scrollBarThumbHover: "#585858",
   },
   images: {
-    logo: "https://www.logo.wine/a/logo/YouTube/YouTube-Almost-Black-Logo.wine.svg",
+    logo: logoYTBlack,
   },
 };
 
@@ -31,6 +31,6 @@ export const darkTheme = {
     scrollBarThumbHover: "#888",
   },
   images: {
-    logo: "https://www.logo.wine/a/logo/YouTube/YouTube-White-Dark-Background-Logo.wine.svg"
+    logo: logoYTWhite
   },
 };
