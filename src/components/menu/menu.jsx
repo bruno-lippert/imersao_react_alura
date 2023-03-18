@@ -1,7 +1,4 @@
-import { useContext } from "react";
-import { darkTheme, lightTheme } from "../../../theme";
 import ChangeTheme from "./components/changeTheme/ChangeTheme";
-import { ColorModeContext } from "./components/changeTheme/ColorMode";
 import Logo from "./components/logo/logo";
 import Search from "./components/search/search";
 import { StyledMenu } from "./styledIndex";
@@ -9,9 +6,7 @@ import { StyledMenu } from "./styledIndex";
 export default function Menu({valorDoFiltro, setValorDoFiltro }) {
   return (
     <StyledMenu>
-      <div>
         <Logo />
-      </div>
       <Search valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro}/>
       <ChangeTheme/>
     </StyledMenu>

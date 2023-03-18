@@ -1,4 +1,4 @@
-import logoYTBlack from "./public/images/YouTubeAlmostBlackLogo.png";
+import logoYTBlack from "./public/images/YouTubeBlackLogo.png";
 import logoYTWhite from "./public/images/YouTubeWhiteLogo.png";
 
 export const lightTheme = {
