@@ -1,7 +1,7 @@
 import ChangeTheme from "./components/changeTheme/ChangeTheme";
 import Logo from "./components/logo/logo";
 import Search from "./components/search/search";
-import { StyledMenu } from "./styledIndex";
+import { StyledMenu } from "./styledMenu";
 
 export default function Menu({valorDoFiltro, setValorDoFiltro }) {
   return (
