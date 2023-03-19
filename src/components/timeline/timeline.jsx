@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import Favorites from "../favorites/favorites";
 import { StyledTimeline } from "./styledTimeline";
 import config from "../../../config.json";
-import VideoInfoProvider, { VideoInformationProvider } from "./videoInfo";
+import VideoInfoProvider, { VideoInformationProvider } from "../videoPage/videoInfo";
 
 export default function Timeline({ playlists, searchValue, sliderButtonIsOn }) {
   const playlistNames = Object.keys(playlists); //retorna as chaves dos objetos(nomes dos objetos)
