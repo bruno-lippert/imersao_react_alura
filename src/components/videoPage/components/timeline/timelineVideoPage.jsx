@@ -10,11 +10,11 @@ export default function TimelineVideoPage() {
       <iframe
         width="727"
         height="409"
-        src="https://www.youtube.com/embed/FqJHwAW8x4Q"
-        title="Resident Evil 4 Remake é SENSACIONAL - Crítica / Análise / Review SEM SPOILER"
-        frameborder="0"
+        src={context.getVideoUrl.toString()}
+        title={context.getVideoTitle.toString()}
+        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
+        allowFullScreen
       ></iframe>
     </StyledTimeline>
   );

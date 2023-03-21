@@ -1,8 +1,11 @@
 import React, { createContext, useContext } from "react";
 
 export const VideoInformationProvider = createContext({
-  getVideoData: (videoTitle, videoUrl) => {
-    
+  getVideoTitle: (videoTitle) => {
+    return videoTitle
+  },
+  getVideoUrl: (videoUrl) => {
+    return videoUrl
   }
 });
 

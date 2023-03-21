@@ -26,8 +26,8 @@ export default function Timeline({ playlists, searchValue, sliderButtonIsOn }) {
                     })
                     .map((video) => {
                       return (
-                        <Link href="/videoPage.jsx">
-                          <img src={video.thumb} onClick={() => context.getVideoData(video.title)}/>
+                        <Link href="/videoPage" key={video.url}>
+                          <img src={video.thumb} onClick={() => {context.getVideoTitle(video.title); context.getVideoUrl(video.url)}}/>
                           <span id="videoTitle">{video.title}</span>
                         </Link>
                         

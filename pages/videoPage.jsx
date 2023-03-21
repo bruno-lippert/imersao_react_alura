@@ -1,14 +1,9 @@
 import React, { useContext } from "react";
 import { ThemeProvider } from "styled-components";
 import { CSSReset } from "../src/components/CSSReset";
-import ColorModeProvider, {
-  ColorModeContext,
-} from "../src/components/menu/components/changeTheme/ColorMode";
+import ColorModeProvider, { ColorModeContext } from "../src/components/menu/components/changeTheme/ColorMode";
 import HeaderVideoPage from "../src/components/videoPage/components/header/headerVideoPage";
 import TimelineVideoPage from "../src/components/videoPage/components/timeline/timelineVideoPage";
-import VideoInfoProvider, {
-  VideoInformationProvider,
-} from "../src/components/videoPage/videoInfo";
 import { darkTheme } from "../theme";
 
 function Page(props) {
