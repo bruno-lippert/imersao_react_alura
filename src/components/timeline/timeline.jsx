@@ -3,6 +3,7 @@ import Favorites from "../favorites/favorites";
 import { StyledTimeline } from "./styledTimeline";
 import config from "../../../config.json";
 import VideoInfoProvider, { VideoInformationProvider } from "../videoPage/videoInfo";
+import Link from 'next/link';
 
 export default function Timeline({ playlists, searchValue, sliderButtonIsOn }) {
   const playlistNames = Object.keys(playlists); //retorna as chaves dos objetos(nomes dos objetos)
@@ -25,11 +26,11 @@ export default function Timeline({ playlists, searchValue, sliderButtonIsOn }) {
                     })
                     .map((video) => {
                       return (
-                        //href={video.url}
-                        <a key={video.url} >
+                        <Link href="/videoPage.jsx">
                           <img src={video.thumb} onClick={() => context.getVideoData(video.title)}/>
-                          <span id="videoTitle" value='teste'>{video.title}</span>
-                        </a>
+                          <span id="videoTitle">{video.title}</span>
+                        </Link>
+                        
                       );
                     })}
                 </div>
