@@ -12,6 +12,8 @@ export default function Timeline({ playlists, searchValue }) {
   let getVideoData = (title, id) => {
     context.videoTitle = title;
     context.videoId = id;
+    console.log(context.videoTitle)
+    console.log(context.videoId)
   };
 
   return (
@@ -33,8 +35,7 @@ export default function Timeline({ playlists, searchValue }) {
                     .map((video) => {
                       return (
                         <Link href="/videoPage" key={video.url}>
-                          <img src={video.thumb} onClick={getVideoData(video.title, video.id)}/>
-                          {console.log(video.id)}
+                          <img src={video.thumb} onClick={() => getVideoData(video.title, video.id)}/>
                           <span id="videoTitle">{video.title}</span>
                         </Link>
                         
