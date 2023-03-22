@@ -5,9 +5,15 @@ import config from "../../../config.json";
 import VideoInfoProvider, { VideoInformationProvider } from "../videoPage/videoInfo";
 import Link from 'next/link';
 
-export default function Timeline({ playlists, searchValue, sliderButtonIsOn }) {
+export default function Timeline({ playlists, searchValue }) {
   const playlistNames = Object.keys(playlists); //retorna as chaves dos objetos(nomes dos objetos)
-  const context = useContext(VideoInformationProvider)
+  const context = useContext(VideoInformationProvider);
+
+  let getVideoData = (title, id) => {
+    context.videoTitle = title;
+    context.videoId = id;
+  };
+
   return (
     <div>
       <VideoInfoProvider>
@@ -27,7 +33,8 @@ export default function Timeline({ playlists, searchValue, sliderButtonIsOn }) {
                     .map((video) => {
                       return (
                         <Link href="/videoPage" key={video.url}>
-                          <img src={video.thumb} onClick={() => {context.getVideoTitle(video.title); context.getVideoUrl(video.url)}}/>
+                          <img src={video.thumb} onClick={getVideoData(video.title, video.id)}/>
+                          {console.log(video.id)}
                           <span id="videoTitle">{video.title}</span>
                         </Link>
                         

@@ -1,21 +1,21 @@
 import React, { useContext } from "react";
 import { StyledTimeline } from "../../../timeline/styledTimeline";
 import { VideoInformationProvider } from "../../videoInfo";
+import YouTube from "react-youtube";
+
+
 
 export default function TimelineVideoPage() {
   const context = useContext(VideoInformationProvider);
+  console.log(context.videoTitle)
+  console.log(context.videoId)
+
+  const videoId = context.videoId;
 
   return (
     <StyledTimeline>
-      <iframe
-        width="727"
-        height="409"
-        src={context.getVideoUrl.toString()}
-        title={context.getVideoTitle.toString()}
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowFullScreen
-      ></iframe>
+      <YouTube videoId={videoId}></YouTube>
+      <h2>{context.videoTitle}</h2>
     </StyledTimeline>
   );
 }

@@ -13,7 +13,7 @@ export default function Logo() {
 
   return (
     <ImgLogo>
-      <Image src={imgLogo} style={{width: "100%", height: "100%"}}/> 
+      <Image src={imgLogo} style={{width: "100%", height: "100%"}} alt="logoImage"/> 
     </ImgLogo>
     //<ImgLogo />
   )

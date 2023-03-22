@@ -1,17 +1,13 @@
-import React, { createContext, useContext } from "react";
+import React, { createContext, useState } from "react";
 
 export const VideoInformationProvider = createContext({
-  getVideoTitle: (videoTitle) => {
-    return videoTitle
-  },
-  getVideoUrl: (videoUrl) => {
-    return videoUrl
-  }
+  videoTitle: "",
+  videoId: ""
 });
 
 export default function VideoInfoProvider(props) {
   return (
-    <VideoInformationProvider.Provider>
+    <VideoInformationProvider.Provider >
       {props.children}
     </VideoInformationProvider.Provider>
   );
