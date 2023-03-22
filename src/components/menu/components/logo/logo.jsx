@@ -5,6 +5,7 @@ import logoYTBlack from "../../../../../public/images/YouTubeBlackLogo.png"
 import Image from 'next/image'
 import { ColorModeContext } from '../changeTheme/ColorMode';
 import { darkTheme } from "../../../../../theme";
+import Link from 'next/link';
 
 export default function Logo() {
   const themeContext = useContext(ColorModeContext)
@@ -13,7 +14,9 @@ export default function Logo() {
 
   return (
     <ImgLogo>
-      <Image src={imgLogo} style={{width: "100%", height: "100%"}} alt="logoImage"/> 
+      <Link href="/">
+        <Image src={imgLogo} style={{ width: "100%", height: "100%" }} alt="logoImage" />
+      </Link>
     </ImgLogo>
     //<ImgLogo />
   )
