@@ -12,8 +12,6 @@ export default function Timeline({ playlists, searchValue }) {
   let getVideoData = (title, id) => {
     context.videoTitle = title;
     context.videoId = id;
-    console.log(context.videoTitle)
-    console.log(context.videoId)
   };
 
   return (
