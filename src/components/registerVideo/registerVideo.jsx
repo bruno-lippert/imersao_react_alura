@@ -2,7 +2,7 @@ import { createClient } from '@supabase/supabase-js';
 import React, { useState } from 'react'
 import { StyledRegisterVideo } from './styledRegisterVideo'
 
-function useForm({initialValues}) {
+function useForm({ initialValues }) {
   const [values, setValues] = useState(initialValues)
 
   return {
@@ -12,8 +12,9 @@ function useForm({initialValues}) {
       const name = e.target.name
       setValues({ ...values, [name]: value })
     },
-    clearForm ()  {
-      setValues({});    }
+    clearForm() {
+      setValues({});
+    }
   }
 }
 
@@ -27,11 +28,15 @@ const supabase = createClient(supabaseUrl, supabaseKey)
 
 export default function RegisterVideo() {
   const [formVisivel, setFormVisivel] = useState(false)
-  
+  const [playlist, setPlaylist] = useState()
+
+  function getPlaylist(evevnt) {
+    setPlaylist(event.target.value)
+  }
 
 
   const formCadastro = useForm({
-    initialValues : {title: "", url: ""}
+    initialValues: { title: "", url: "", playlist: "" }
   })
   return (
     <StyledRegisterVideo>
@@ -48,19 +53,25 @@ export default function RegisterVideo() {
             title: formCadastro.values.title,
             url: formCadastro.values.url,
             thumb: getThumb(formCadastro.values.url),
-            playlist: "estudos"
+            playlist: playlist
           })
-          .then((response) => {
-            console.log(response);
-          })
-          .catch((err) => {
-            console.log(err)
-          })
+            .then((response) => {
+              console.log(response);
+            })
+            .catch((err) => {
+              console.log(err)
+            })
         }}>
           <div className='form'>
             <button type='button' className='close-modal' onClick={() => setFormVisivel(false)}>X</button>
             <input type="text" placeholder='Título do vídeo' name="title" onChange={formCadastro.handleChange} className='video-info' />
             <input type="text" placeholder='URL do vídeo' name="url" onChange={formCadastro.handleChange} className='video-info' />
+            <select name="playlists" id="playlists" onChange={getPlaylist}>
+              <option>Selecione uma playlist...</option>
+              <option value="jogos">Jogos</option>
+              <option value="estudos">Estudos</option>
+              <option value="entretenimento">Entretenimento</option>
+            </select>
             <button type="submit" className='register-videoButton'>Cadastrar</button>
           </div>
         </form>
