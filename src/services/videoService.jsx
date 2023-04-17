@@ -8,6 +8,10 @@ export function videoService() {
     return {
         getAllVideos() {
             return supabase.from("video").select("*");
+        },
+
+        getDataVideo() {
+            return supabase.from("video");
         }
     }
 }
